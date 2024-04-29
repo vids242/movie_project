@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="asset/css/movie.css">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" name="" id="chk1">
+        <div class="logo"><img src="asset/img/prime.png" alt="" width="190px" height="80px">
+        </div>
+
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="#">Movie</a></li>
+            <li><a href="cinema.html">Cinema</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+        <div class="ragister">
+            <a href="login.html" class="btn third">Log in</a>
+            <a href="ragister.html" class="btn third">Ragister</a>
+        </div>
+
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
+    </header>
+
+    <div id="hero-slides">
+        <h2 class="inlineModuleHeader__header">LATEST MOVIES</h2>
+        <div id="slides-cont">
+            <div class="button" id="next"></div>
+            <div class="button" id="prev"></div>
+            <div id="slides">
+                <div class="slide" style="background-image: url(asset/img/1.jpg)">
+                    <div class="number">01</div>
+                    <div class="body">
+                        <div class="location">Spider-Man: No Way Home</div>
+
+                        <a href="https://unsplash.com/photos/ANJHXftvvJ8" target="_blank">
+                            <div class="link">Read More</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(asset/img/2.jpg)">
+                    <div class="number">02</div>
+                    <div class="body">
+                        <div class="location">IRON MEN</div>
+                        <a href="https://unsplash.com/photos/ANJHXftvvJ8" target="_blank">
+                            <div class="link">Read More</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(asset/img/3.jpg)">
+                    <div class="number">03</div>
+                    <div class="body">
+                        <div class="location">Ant-Man and The Wasp: Quantumania</div>
+                        <a href="https://unsplash.com/photos/73aocAAt7rs" target="_blank">
+                            <div class="link">Read More</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(asset/img/4.jpg)">
+                    <div class="number">04</div>
+                    <div class="body">
+                        <div class="location">Guardians of the Galaxy Vol. 3</div>
+                        <a href="https://unsplash.com/photos/aPDCEoW7B78" target="_blank">
+                            <div class="link">Read More</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(asset/img/5.jpg)">
+                    <div class="number">05</div>
+                    <div class="body">
+                        <div class="location">THE MARVELS</div>
+                        <a href="https://unsplash.com/photos/Akz00I_GGjU" target="_blank">
+                            <div class="link">Read More</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(asset/img/6.jpg)">
+                    <div class="number">06</div>
+                    <div class="body">
+                        <div class="location">Black Panther: Wakanda Forever</div>
+                        <a href="https://unsplash.com/photos/pTn26knnKVw" target="_blank">
+                            <div class="link">Read More</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(asset/img/7.jpg)">
+                    <div class="number">07</div>
+                    <div class="body">
+                        <div class="location">Thor: Love and Thunder</div>
+                        <a href="https://unsplash.com/photos/v63B_MUiFw8" target="_blank">
+                            <div class="link">Read More</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="next-catch"></div>
+            <div id="prev-catch"></div>
+        </div>
+
+    </div>
+
+
+
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js'></script>
+
+    <script src="asset/js/movie.js"></script>
+</body>
+
+</html>

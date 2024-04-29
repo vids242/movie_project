@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #F5F5F5;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+
+}
+
+
+/* ----------------header-------------------------------- */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 0 0 10px #000;
+  background: rgba(255, 255, 255, 0.5);
+
+}
+
+#chk1 {
+  display: none;
+}
+
+i {
+  color: #fff;
+  cursor: pointer;
+}
+
+header .logo {
+  flex: 1;
+  color: #fff;
+
+  margin-left: 50px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+
+header ul {
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+
+header ul li a:hover {
+  border-bottom: 2px solid cadetblue;
+}
+
+header .menu {
+  font-size: 2.5em;
+  display: none;
+}
+
+@media(max-width:1000px) {
+  .search-box button {
+    position: absolute;
+  }
+
+  header ul {
+    position: fixed;
+    top: 100px;
+    right: -100%;
+    background: rgba(0, 0, 0, 0.5);
+    height: calc(100vh - 100px);
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    transition: right 0.5s linear;
+  }
+
+  header .menu {
+    display: block;
+    width: 100px;
+    text-align: center;
+  }
+
+  #chk1:checked~ul {
+    right: 0;
+
+  }
+
+}
+
+.ragister {
+  display: flex;
+}
+
+.btn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 10px;
+  padding: 10px 10px;
+
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    outline: 0;
+  }
+}
+
+.third {
+  border-color: #3498db;
+  color: #ffff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    color: #000;
+  }
+}
+
+
+
+/* --------------------section--------------------------------- */
+#hero {
+  margin-top: 120px;
+}
+
+#movie .movie_name {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  justify-content: center;
+}
+
+#movie #movie-slide p {
+  margin-bottom: 10px;
+
+}
+
+.movieCard {
+  width: 300px;
+  margin-left: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.movieCard #movieImage {
+  width: 250px;
+  margin-left: 10px;
+  margin: 0.5rem 1rem;
+}
+
+.movieCard #movieImage:hover {
+  transform: scale(1deg 1deg);
+}
+
+
+
+#cinema_slide {
+  /* width: 100%; */
+  /* height: 550px; */
+  /* margin: 0 2rem; */
+  border-radius: 1rem;
+  transition: all 0.6s;
+  margin-top: 2rem;
+  display: flex;
+  row-gap: 2rem;
+  justify-content: space-evenly;
+}
+
+#cinema_slide img {
+  border-radius: 1rem;
+  /* margin: 1rem; */
+  width: 80%;
+  height: 50%;
+  object-fit: cover;
+  /* background-color: #fff; */
+  margin: 0.5rem 2rem;
+}
+
+#cinema .cinema_name {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  justify-content: center;
+}
+
+#cinema #cinema-slide p {
+  margin-bottom: 10px;
+
+}
+
+.cinemaCard {
+  width: 300px;
+  /* height: 550px; */
+  margin-left: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+}
+
+.cinemaCard #cinemaImage {
+  width: 250px;
+  margin-left: 10px;
+  margin: 0.5rem 1rem;
+}
+
+/* --------------------tag------- */
+
+
+#cinama_tag {
+  width: 87%;
+
+  height: 65px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 40px 0 0px 80px;
+  align-items: center;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+#cinama_tag h3 {
+  padding: 17px 20px;
+  font-weight: bold;
+  font-size: 25px;
+}
+#cinama_tag h6 {
+  padding-right: 20px;
+  /* text-decoration: underline; */
+  color: rgb(220, 53, 75);
+}
+
+/* --------------------------------------------- */
+
+
+
+
+#seconds {
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+
+}
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: hsl(212, 42%, 20%);
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper i:first-child {
+  left: -22px;
+}
+
+.wrapper i:last-child {
+  right: -22px;
+}
+
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+.carousel .card {
+  scroll-snap-align: start;
+  /* height: 342px; */
+  width: 100%;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+  background: #fff;
+  color: #000;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  /* margin-left: 16px; */
+  margin-bottom: 5px;
+}
+
+.carousel .card .img {
+
+  height: 210px;
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px 0px 35px;
+  /* border-right: 2px solid #fff;
+  border-left: 2px solid #fff; */
+}
+
+.card a {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* #cinema_data {
+  background: hsl(212, 42%, 20%);
+  
+  padding: 1.5rem 0rem;
+  border-radius: 1rem;
+  text-align: center;
+} */
+
+.card a span {
+  display: block;
+  margin: 5px 0;
+  text-align: left;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  color: #000;
+  font-weight: 400;
+  /* text-transform: uppercase;
+  font-weight: 400; */
+}
+
+.card .img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border: 3px solid #fff;
+  border-radius: 5px 1px 35px;
+}
+
+.carousel .card h2 {
+  font-weight: 600;
+  font-size: 1.56rem;
+  margin: 10px 0;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.carousel .card span {
+  color: #000;
+  font-size: 1.31rem;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}

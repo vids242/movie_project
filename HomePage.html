@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="asset/css/HomePage.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <input type="checkbox" name="" id="chk1">
+        <div class="logo"><img src="asset/img/prime.png" alt="" width="190px" height="80px">
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="movie.html">Movie</a></li>
+            <li><a href="cinema.html">Cinema</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+        <div class="ragister">
+            <a href="login.html" class="btn third">Log in</a>
+            <a href="ragister.html" class="btn third">Ragister</a>
+        </div>
+
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+
+            </div>
+        </section>
+        <div id="cinama_tag">
+            <h3>Select Cinema</h3>
+            <h6>Explore Cinema Hear </h6>
+        </div>
+        <section id="seconds">
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel" id="cinema_slider">
+                    <li class="card" >
+                        <div class="img"><img src="asset/img/drworld.jpg" alt="img" draggable="false"></div>
+                        <h2>DR WORLD</h2>
+                        <span>Sales Manager</span>
+                    </li>
+                   
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </section>
+
+
+        <section id="cinema">
+            <div class="container">
+                <h2>Cinema</h2>
+                <div id="cinema_slide" class="row">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="movie">
+            <div class="container">
+                <h2>Movies</h2>
+                <div id="movie-slide" class="row">
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+    <script src="asset/js/homepagee.js"></script>
+    <script>
+        let next = document.querySelector('.next')
+        let prev = document.querySelector('.prev')
+
+        next.addEventListener('click', function () {
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').appendChild(items[0])
+        })
+
+        prev.addEventListener('click', function () {
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+        })
+    </script>
+</body>
+
+</html>

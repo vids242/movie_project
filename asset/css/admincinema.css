@@ -1,0 +1,76 @@
+/* Reset some default styling */
+body,
+h1,
+h2,
+h3,
+p,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+#moviesadda {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="file"] {
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#moviedis {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Font Awesome icon styling */
+i {
+    cursor: pointer;
+    color: #007bff; /* or any color you prefer */
+    margin-right: 5px;
+}
+
+i:hover {
+    color: #0056b3; /* or any color you prefer for hover state */
+}
+
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 600px) {
+    #moviesadda,
+    #moviedis {
+        max-width: 100%;
+    }
+}

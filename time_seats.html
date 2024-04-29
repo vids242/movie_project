@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="asset/css/bootstrap.min.css"> -->
+    <style>
+        button {
+            margin: 4px;
+            /* float: left; */
+            width: 25px;
+            height: 25px;
+            background: transparent;
+            outline: none;
+            border: 1px solid #1ea83c;
+            /* text-decoration: none; */
+            border-radius: 2px;
+            color: #1ea83c;
+            text-align: center;
+            font-size: 10px;
+            line-height: 25px;
+            font-weight: 400;
+            padding: 0;
+        }
+
+        button:hover {
+            background-color: #1ea83c;
+            color: #fff;
+        }
+
+        button:disabled {
+            pointer-events: none;
+            opacity: .35;
+        }
+
+        #disp {
+            width: 90%;
+            margin: 0 auto;
+            /* background-color: #fff; */
+            border-radius: 5px;
+        }
+
+        #disp2 {
+            display: flex;
+            /* margin-top: 30px; */
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        #disp2 p {
+            margin: 0;
+            padding-left: 5px;
+        }
+
+        #disp3 {
+            margin: 0 auto;
+            width: 100px;
+        }
+
+        .btn {
+            width: 100px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="disp">
+
+    </div>
+    <div id="disp2">
+        Your Tickets Prices is :
+        <p id="price">0</p>
+    </div>
+    <div id="disp3">
+
+    </div>
+
+    <script src="asset/js/time_seats.js"></script>
+</body>
+
+</html>

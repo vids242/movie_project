@@ -1,0 +1,268 @@
+{
+  "user": [
+    {
+      "id": "d265",
+      "fname": "vids",
+      "age": "22",
+      "email": "vids@gmail.com",
+      "password": "242242",
+      "profile_pic": "users/vrajpic.jpg",
+      "status": "active",
+      "createAt": "Wed Feb 07 2024 16:03:40 GMT+0530 (India Standard Time)",
+      "updateAt": "Wed Feb 07 2024 16:03:40 GMT+0530 (India Standard Time)"
+    },
+    {
+      "id": "c5b1",
+      "fname": "het",
+      "age": "19",
+      "email": "het@gmail.com",
+      "password": "1919",
+      "profile_pic": "users/u1.webp",
+      "status": "pending",
+      "createAt": "Wed Feb 07 2024 17:55:12 GMT+0530 (India Standard Time)",
+      "updateAt": "Wed Feb 07 2024 17:55:12 GMT+0530 (India Standard Time)"
+    }
+  ],
+  "cinema": [
+    {
+      "id": "50ab",
+      "cinema_name": "INOX",
+      "image": "http://127.0.0.1:5500/asset/img/users/inox.jpg",
+      "address": "Piplod",
+      "phoneNumber": "9908765890",
+      "email": "inox@gmail.com",
+      "createdAt": "Fri Feb 16 2024 08:17:03 GMT+0530 (India Standard Time)",
+      "updatedAt": "Fri Feb 16 2024 08:17:03 GMT+0530 (India Standard Time)",
+      "status": "active"
+    },
+    {
+      "id": "82e1",
+      "cinema_name": "VALANTINE MULTIFLEX",
+      "image": "http://127.0.0.1:5500/asset/img/users/valantine.jpg",
+      "address": "Vip road",
+      "phoneNumber": "8793456945",
+      "email": "valantine@gmail.com",
+      "createdAt": "Fri Feb 16 2024 08:19:29 GMT+0530 (India Standard Time)",
+      "updatedAt": "Fri Feb 16 2024 08:19:29 GMT+0530 (India Standard Time)",
+      "status": "active"
+    },
+    {
+      "id": "e259",
+      "cinema_name": "VR MALL",
+      "image": "http://127.0.0.1:5500/asset/img/users/vrmall.jpg",
+      "address": "Vesu Main Point",
+      "phoneNumber": "8890767790",
+      "email": "vrmall@gmail.com",
+      "createdAt": "Fri Feb 16 2024 08:20:09 GMT+0530 (India Standard Time)",
+      "updatedAt": "Fri Feb 16 2024 08:20:09 GMT+0530 (India Standard Time)",
+      "status": "active"
+    },
+    {
+      "id": "659c",
+      "cinema_name": "Friday Cinema",
+      "image": "http://127.0.0.1:5500/asset/img/users/friday.jpg",
+      "address": "Sudama Chowk",
+      "phoneNumber": "4567245678",
+      "email": "FridayCinema@gmail.com",
+      "createdAt": "Tue Feb 20 2024 10:21:38 GMT+0530 (India Standard Time)",
+      "updatedAt": "Tue Feb 20 2024 10:21:38 GMT+0530 (India Standard Time)",
+      "status": "active"
+    }
+  ],
+  "movie": [
+    {
+      "id": "53ad",
+      "movie_name": "animal",
+      "movie_status": "Active",
+      "movie_pic": "http://127.0.0.1:5500/asset/img/movie/animal.jpg",
+      "description": "amazing",
+      "cinema_Id": "50ab",
+      "createdAt": "Fri Feb 16 2024 08:48:03 GMT+0530 (India Standard Time)",
+      "updatedAt": "Fri Feb 16 2024 08:48:03 GMT+0530 (India Standard Time)"
+    },
+    {
+      "id": "3230",
+      "movie_name": "fighter",
+      "movie_status": "Active",
+      "movie_pic": "http://127.0.0.1:5500/asset/img/movie/fighter.jpg",
+      "description": "nice",
+      "cinema_Id": "82e1",
+      "createdAt": "Fri Feb 16 2024 08:48:22 GMT+0530 (India Standard Time)",
+      "updatedAt": "Fri Feb 16 2024 08:48:22 GMT+0530 (India Standard Time)"
+    },
+    {
+      "id": "a30d",
+      "movie_name": "Argaila",
+      "movie_status": "Active",
+      "movie_pic": "http://127.0.0.1:5500/asset/img/movie/argaila.webp",
+      "description": "New York 2075. The evil Queen Dark rules the world and by casting a spell upon girls she remains alive forever. Prince Argai from 1250 a.d. is furious when he discovers his fiancee Angel has been enchanted; a lightning flash sends him to 2075 where he seeks refuge with private detective Oscar Lightbulb,",
+      "cinema_Id": "659c",
+      "createdAt": "Tue Feb 20 2024 10:24:56 GMT+0530 (India Standard Time)",
+      "updatedAt": "Tue Feb 20 2024 10:24:56 GMT+0530 (India Standard Time)"
+    },
+    {
+      "id": "7f3a",
+      "movie_name": "kamthan",
+      "movie_status": "Active",
+      "movie_pic": "http://127.0.0.1:5500/asset/img/movie/kamthan.jpg",
+      "description": "A small-time thief makes the robbery of a lifetime when he accidentally breaks into the house of the newly appointed Police Inspector.",
+      "cinema_Id": "659c",
+      "createdAt": "Tue Feb 20 2024 10:25:53 GMT+0530 (India Standard Time)",
+      "updatedAt": "Tue Feb 20 2024 10:25:53 GMT+0530 (India Standard Time)"
+    },
+    {
+      "id": "95bc",
+      "movie_name": "Captain Miller",
+      "movie_status": "Active",
+      "movie_pic": "http://127.0.0.1:5500/asset/img/movie/cm.jpg",
+      "description": "Set in the 1930s, during the British Raj, it follows a former British Army soldier trying to save his home village from destruction by the British Army.",
+      "cinema_Id": "659c",
+      "createdAt": "Tue Feb 20 2024 10:26:33 GMT+0530 (India Standard Time)",
+      "updatedAt": "Tue Feb 20 2024 10:26:33 GMT+0530 (India Standard Time)"
+    }
+  ],
+  "time": [
+    {
+      "id": "4b63",
+      "cinema_id": "50ab",
+      "movie_id": "53ad",
+      "date": "2024-02-17",
+      "time_data": [
+        "10:09",
+        "13:15"
+      ],
+      "createdAt": "Fri Feb 16 2024 09:09:17 GMT+0530 (India Standard Time)",
+      "updatedAt": "Fri Feb 16 2024 09:09:17 GMT+0530 (India Standard Time)"
+    },
+    {
+      "id": "69dd",
+      "cinema_id": "82e1",
+      "movie_id": "3230",
+      "date": "2024-02-18",
+      "time_data": [
+        "11:55"
+      ],
+      "createdAt": "Fri Feb 16 2024 09:09:42 GMT+0530 (India Standard Time)",
+      "updatedAt": "Fri Feb 16 2024 09:09:42 GMT+0530 (India Standard Time)"
+    },
+    {
+      "id": "c835",
+      "cinema_id": "659c",
+      "movie_id": "a30d",
+      "date": "2024-02-27",
+      "time_data": [
+        "01:30",
+        "20:45"
+      ],
+      "createdAt": "Tue Feb 20 2024 10:28:03 GMT+0530 (India Standard Time)",
+      "updatedAt": "Tue Feb 20 2024 10:28:03 GMT+0530 (India Standard Time)"
+    },
+    {
+      "id": "c5d3",
+      "cinema_id": "659c",
+      "movie_id": "7f3a",
+      "date": "2024-02-25",
+      "time_data": [
+        "00:30"
+      ],
+      "createdAt": "Tue Feb 20 2024 10:28:21 GMT+0530 (India Standard Time)",
+      "updatedAt": "Tue Feb 20 2024 10:28:21 GMT+0530 (India Standard Time)"
+    },
+    {
+      "id": "33f4",
+      "cinema_id": "659c",
+      "movie_id": "95bc",
+      "date": "2024-02-29",
+      "time_data": [
+        "14:30",
+        "21:00",
+        "12:30"
+      ],
+      "createdAt": "Tue Feb 20 2024 10:29:06 GMT+0530 (India Standard Time)",
+      "updatedAt": "Tue Feb 20 2024 10:29:06 GMT+0530 (India Standard Time)"
+    }
+  ],
+  "seat": [
+    {
+      "cinema_id": "50ab",
+      "movie_id": "53ad",
+      "time": "10:09",
+      "seatObj": [
+        {
+          "date": "2/16/2024",
+          "seat": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "date": "2/17/2024",
+          "seat": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "price": "110",
+      "createdAt": "Tue Feb 27 2024 13:22:59 GMT+0530 (India Standard Time)",
+      "updatedAt": "Tue Feb 27 2024 13:22:59 GMT+0530 (India Standard Time)",
+      "id": "c892"
+    }
+  ]
+}
